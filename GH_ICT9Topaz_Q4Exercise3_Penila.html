@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Centimeters to Feet Calculator</title>
+</head>
+<body>
+	<center>
+		<input type="text" id="num1" placeholder="Enter the first number"><br><br>
+		<input type="submit" value="Convert Cm to Ft" onclick="cmToInches()"><br>
+		<p id="id1"></p>
+		<script>
+			function cmToInches() {
+				var x = document.getElementById('num1').value;
+				var answer = Number(x) / 30.48 + ' ft';
+				document.getElementById('id1').innerHTML = answer;
+			}
+		</script>
+	</center>
+</body>
+</html>
